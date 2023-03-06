@@ -14,7 +14,7 @@ public class BrestCityProcessorImpl implements Processor {
     @Override
     public void handle(final EntityToProcess entity) {
         log.info("{} {} is from {}. So the nearest office is on the {}", entity.name(),
-                entity.surname(), entity.location());
+                entity.surname(), entity.dateOfBirth(), entity.location());
     }
 
     @Override
